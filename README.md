@@ -64,9 +64,11 @@ dependencies{
 
 ## Ejemplos con Java
 
-Para el ejemplo se usarán objetos de la siguiente clase:
+En la carpeta `lib` se encuentra para descarga el archivo __.jar__ de la librería __gson-2.8.6__. 
 
-<img src="images/model.png" style="zoom:50%">
+Para el ejemplo se usarán instancias de la siguiente clase:
+
+<img src="images/model.png" style="zoom:40%">
 
 ###  Serializando un Objeto de java
 
