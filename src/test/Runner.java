@@ -25,6 +25,7 @@ public class Runner {
 
         //System.out.println( jsonPretty.toJson( renault ) );
 
+
         //Ejemplo que serializa una colección de objetos
         List<Car> cars = Arrays.asList(new Car("JIA764","Renault 4",(short)1977,"Verde",2_300_000,false, LocalDate.of(1996, Month.NOVEMBER,17)),
                 new Car("JJJ708","Renault 9",(short)1989,"Azul",10_400_000,true, LocalDate.of(1988, Month.JUNE,25)),
@@ -44,9 +45,13 @@ public class Runner {
                 "\"dateEnrollment\":{\"year\":2005,\"month\":04,\"day\":28}," +
                 "\"state\":true}";
 
+        //System.out.println( strCar);
+
         Car corsa = new Gson().fromJson( strCar, Car.class );
 
         //System.out.println( corsa );
+
+        //Deserializando una colleción de objetos de vehículos en formato JSON a una colección de Java
 
         String strCars = "[{\"plate\":\"DZW737\"," +
                 "\"brand\":\"Chevrolet Corsa Evolution\"," +
@@ -67,5 +72,6 @@ public class Runner {
         List<Car> newCars = new Gson().fromJson(strCars, typeList );
         System.out.printf("Se han deserializado %d Objetos%n",newCars.size());
         newCars.forEach( car -> System.out.println( car ) );
+
     }
 }

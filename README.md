@@ -1,5 +1,11 @@
 # Gestión de Objetos JSON con Gson de Google
 
+## Herramientas usadas
+- Java 1.8
+- IntellijIdea
+
+> En el archivo que permite ejecutar la aplicación (Runner.java), activar/desactivar comentarios para una mejor comprensión de la secuencoa de transformación de los objetos.
+
 ## JSON
 
 Acrónimo de __Javascript Object Notation__ es un formato de texto sencillo para el intercambio de datos. Es un subconjunto de la notación literal de Objetos de Javascript y se ha adoptado como una alternativa al formato `xml` para transferir datos en Internet. Los valores se expresan en formato ___clave:valor___ separados por coma (,). Un objeto se describe entre llaves así:
